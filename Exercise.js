@@ -32,7 +32,9 @@ function objectProjection(arrayOfObjects) {
   var videoAndTitlePairs = [];
 
 	// ------------ INSERT CODE HERE! -----------------------------------
-
+  arrayOfObjects.forEach(function(film) {
+    videoAndTitlePairs.push({ id: film.id , title: film.title });
+  });
 	return videoAndTitlePairs;
 }
 
@@ -44,7 +46,7 @@ Array.prototype.myMap = function(projectionFunction) {
 		// ------------ INSERT CODE HERE! ----------------------------
 		// Apply the projectionFunction to each item in the array and add
 		// each result to the results array.
-
+    results.push(itemInArray + 1);
 	});
 	return results;
 };
