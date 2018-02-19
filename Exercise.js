@@ -136,6 +136,9 @@ function longestMovie(arrayOfObjects) {
   return longestVideo.title;
 }
 
+
+// TO FINISH FROM HERE
+
 //10. Implement reduce()
 Array.prototype.myReduce = function(combiner, initialValue) {
   var counter,
